@@ -10,9 +10,12 @@ jdk:
 after_success:
    - mvn clean cobertura:cobertura
    - mvn test
+   - echo "Builds passed"
  
 before_script: mvn --version
 
+after_failure:
+   - echo "builds failed"
 
 notifications:
   email: false
