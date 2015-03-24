@@ -8,7 +8,7 @@ public class TestApp extends TestCase {
       App app = new App();
       result = app.getData();
     } finally {
-      assertEquals("Hope this works for build failure!", result);
+      assertEquals("Hope this works !", result);
     }
   } 
 }
